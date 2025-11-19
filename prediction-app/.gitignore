@@ -1,23 +1,134 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-**node_modules
+# =========================
+# Global ignores
+# =========================
+.DS_Store
+Thumbs.db
+.env
+*.log
+*.sqlite3
+*.pyc
+__pycache__/
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Python backend
+# =========================
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.nox/
+.cache/
+pytest_cache/
+coverage.xml
+htmlcov/
+
+# Django / Flask / FastAPI specific
+db.sqlite3
+instance/
+.mypy_cache/
+.pytest_cache/
+.static_storage/
+.media/
+local_settings.py
+
+# =========================
+# React frontend
+# =========================
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+frontend/node_modules/
 
-# testing
-/coverage
+# build output
+frontend/build/
 
-# production
-/build
+# production files
+frontend/.next/
+frontend/out/
 
 # misc
-.DS_Store
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Editor directories and files
+frontend/.vscode/
+frontend/.idea/
+
+# =========================
+# OS and system files
+# =========================
+*.bak
+*.tmp
+*.temp
+*.log
+ehthumbs.db
+Desktop.ini
+
+# Node dependencies
+node_modules/
+
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OS / editor files
+.DS_Store
+*.swp
+.idea/
+.vscode/
