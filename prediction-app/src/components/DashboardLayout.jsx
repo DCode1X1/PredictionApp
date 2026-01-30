@@ -21,7 +21,7 @@ export default function DashboardLayout() {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-700">
           <h1 className={`text-xl font-bold ${sidebarOpen ? "block" : "hidden"}`}>
-            Dashboard
+            DEFI Dashboard
           </h1>
           <button
             onClick={() => setSidebarOpen((s) => !s)}
@@ -128,7 +128,7 @@ export default function DashboardLayout() {
       <main className="flex-1 overflow-y-auto">
         {activeMenu === "home" && (
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">Welcome</h2>
+            <h2 className="text-2xl font-bold mb-4">Kuber's DEFI Kingdom Website</h2>
             <p className="text-gray-400">
               Choose “Trading App” from the sidebar to open your trading dashboard.
             </p>
